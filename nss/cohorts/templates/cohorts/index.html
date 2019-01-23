@@ -1,0 +1,7 @@
+<h1>All Cohorts</h1>
+
+<ul>
+    {% for cohort in cohort_list %}
+        <li><a href = "{% url 'cohorts:detail' cohort.id %}">{{ cohort.name }}</a></li>
+    {% endfor %}
+</ul>
